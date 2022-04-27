@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B79DDC"
+    tools:context=".Exercise1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="410dp"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="67dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text=" Line thickness" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text=" Line Color" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text=" Arrow Keys" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="412dp"
+        android:layout_height="131dp"
+        android:layout_marginBottom="228dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Spinner
+            android:id="@+id/size_spinner"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dropdown"
+            android:entries="@array/sizes"
+         />
+
+        <LinearLayout
+            android:layout_width="152dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rdbRed"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:text="Red"
+                    android:onClick="onRadioButtonClicked"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/rdbYellow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Yellow"
+                    android:onClick="onRadioButtonClicked"
+                    android:textStyle="bold"/>
+
+                <RadioButton
+                    android:id="@+id/rdbCyan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cyan"
+                    android:onClick="onRadioButtonClicked"
+                    android:textStyle="bold"/>
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnLeft"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:onClick="btnLeft_Tapped"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_keyboard_arrow_left_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnUp"
+                android:layout_width="match_parent"
+                android:layout_height="66dp"
+                android:onClick="btnUp_Tapped"
+                app:srcCompat="@drawable/ic_keyboard_arrow_up_black_24dp" />
+
+            <ImageButton
+                android:id="@+id/btnDown"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:onClick="btnDown_Tapped"
+                app:srcCompat="@drawable/ic_keyboard_arrow_down_black_24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnRight"
+                android:layout_width="wrap_content"
+                android:onClick="btnRight_Tapped"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="408dp"
+        android:layout_height="34dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text=" Use key above to draw" />
+
+    <ImageView
+        android:id="@+id/ImageViewForDrawing"
+        android:layout_width="387dp"
+        android:layout_height="453dp"
+        android:layout_margin="20px"
+        android:layout_marginBottom="364dp"
+        android:minWidth="300px"
+        android:minHeight="300px"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintStart_toStartOf="parent"></ImageView>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/ImageViewForDrawing"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="clearCanvas"
+            android:text="Clean" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

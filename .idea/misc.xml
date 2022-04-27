@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/maiar/MobileApp/Mobile_Assignments/MaiaraAlmeida_COMP304_Lab3/app/src/main/res/layout/activity_exe_rvadaptor.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/maiar/MobileApp/Mobile_Assignments/MaiaraAlmeida_COMP304_Lab3/app/src/main/res/layout/activity_exercise1.xml" value="0.25" />
+        <entry key="..\:/Users/maiar/MobileApp/Mobile_Assignments/MaiaraAlmeida_COMP304_Lab3/app/src/main/res/layout/activity_exercise2.xml" value="0.28020833333333334" />
+        <entry key="..\:/Users/maiar/MobileApp/Mobile_Assignments/MaiaraAlmeida_COMP304_Lab3/app/src/main/res/layout/activity_exercise3.xml" value="0.18" />
+        <entry key="..\:/Users/maiar/MobileApp/Mobile_Assignments/MaiaraAlmeida_COMP304_Lab3/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/maiar/MobileApp/Mobile_Assignments/MaiaraAlmeida_COMP304_Lab3/app/src/main/res/layout/exerc_info.xml" value="0.2020460358056266" />
+        <entry key="..\:/Users/maiar/MobileApp/Mobile_Assignments/MaiaraAlmeida_COMP304_Lab3/app/src/main/res/menu/menudisplay.xml" value="0.18541666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
